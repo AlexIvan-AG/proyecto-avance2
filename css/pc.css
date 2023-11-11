@@ -1,0 +1,257 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+
+/*-------------------------------------------HEADER----------------------------------------------------*/
+header {
+    background: green;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header:hover {
+    background-color: blue;
+    color: black;
+    transition: background-color .8s;
+}
+/*-------------------------------------------MENU----------------------------------------------------*/
+
+nav {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.menu a {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 2%;
+    flex: 1; 
+}
+
+.menu a:hover {
+    background-color: #424141;
+    color: rgb(47, 221, 111);
+    transition: background-color .8s;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu a {
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.submenu a:hover {
+    background-color: #424141;
+    color: rgb(47, 221, 111);
+    transition: background-color .8s;
+}
+/*-------------------------------------------BUSQUEDA----------------------------------------------------*/
+
+.busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.busqueda input {
+    padding: 10px;
+    border: none;
+    flex: 2; 
+}
+
+.busqueda button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    flex: 1;
+}
+
+.busqueda:hover {
+    background-color: #424141;
+    color: rgb(47, 221, 111);
+    transition: background-color .8s;
+}
+/*-------------------------------------------PRODUCTO----------------------------------------------------*/
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #414141;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.product-image:hover{
+    background: #242424;
+    transition: background .7s;
+
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.enlarged-image {
+    max-width: 80%;
+    max-height: 80%;
+}
+/*-------------------------------------------BOTON DE COMPRAR----------------------------------------------------*/
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.detalles {
+    padding-left: 20px;
+    flex: 1;
+}
+
+h1, p {
+    color: #ffffff;
+}
+
+.precio {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.comprar-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b33515;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.comprar-btn:hover {
+    background: #242424;
+    transition: background .7s;
+}
+
+.agregar-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b7a36;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.agregar-btn:hover {
+    background: #333333;
+    transition: background .3s;
+}
+
+#caracteristicas{
+    background: #02b93f52;
+    padding: 10px;
+}
+ #caracteristicas{
+    color: #fff;
+ }
+
+ 
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.contacto{
+    background: #000;
+    padding: 10px;
+}
+/*------------------------------responsive------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    .producto-info {
+        flex-direction: column;
+    }
+
+    .detalles {
+        padding-left: 0;
+    }
+
+    .busqueda {
+        flex-direction: column;
+    }
+
+    .busqueda input,
+    .busqueda button {
+        width: 100%; }
+    }

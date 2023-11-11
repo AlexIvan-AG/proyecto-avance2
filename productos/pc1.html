@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto en Venta</title>
+    <link rel="stylesheet" href="../css/pc.css">
+</head>
+<body>
+    <header>
+        <a href="">Descubre las orfetas que tenemos para ti -></a>
+    </header>
+    <nav class="menu">
+        <a href="perifericos" id="perifericos">Periféricos</a>
+        <div class="submenu" id="submenuPerifericos">
+            <a href="#">Opción 1</a>
+            <a href="#">Opción 2</a>
+            <a href="#">Opción 3</a>
+        </div>
+        <a href="componentes">Componentes</a>
+        <a href="laptos">Laptos</a>
+        <form action="buscar" method="get" class="busqueda">
+            <input type="text" name="buscador" placeholder="Buscar" required>
+            <button class="menu" type="submit">Buscar</button>
+        </form>
+        <a href="#">Carrito</a>
+    </nav>
+
+    <div class="container">
+        <div class="producto-info">
+            <div class="image-container">
+                <img src="../img/pc1.png" width="300px" alt="Producto en Venta" class="product-image" id="productImage">
+                <div class="overlay" id="overlay">
+                    <img src="img/pc1.png" alt="Producto en Venta" class="enlarged-image" id="enlargedImage">
+                    <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                </div>
+            </div>
+            <div class="detalles">
+                <h1>Computadora Gamer PC gaming W11 - monitor + audifonos + mouse</h1>
+                <p>
+                    Computadora gamer con procesador intel Core i9-10900 de 2.80Ghz de procesamiento, 16gb de memoria RAM a 3200Mhz, 1tb de almacenamiento SSD, Fuente de poder ROG strix 750wts 80 plus gold
+                </p>
+                <span class="precio">Precio: $16,999.99</span><br>
+                <a href="#" class="agregar-btn">Agregar al carrito</a>
+                <a href="#" class="comprar-btn">Comprar ahora</a>
+            </div>
+        </div>
+        <div id="caracteristicas">
+            <ul>
+                <li>Procesador : Intel Core i9-10900</li>
+                <li>Memoria RAM : 16gb 3200Mhz</li>
+                <li>Almacenamiento : 1tb SSD </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="contacto">
+            <h2>Contactanos</h2>
+            <p>Estamos aquí para ayudarte. ¡Contáctanos! <br><br>
+                Email: al22351@alumnos.uacj.mx <br><br>
+                Teléfono: +123 456 789
+            </p>
+        </div>
+    </footer>
+    <script src="../js/pc1.js"></script>
+</body>
+</html>
